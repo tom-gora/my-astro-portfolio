@@ -1,0 +1,279 @@
+---
+import { getCollection } from "astro:content";
+
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Component Imports
+import CallToAction from "../components/CallToAction.astro";
+import Grid from "../components/Grid.astro";
+import Hero from "../components/Hero.astro";
+import { Icon } from "astro-icon/components";
+import Pill from "../components/Pill.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import HeroImage from "../components/HeroImage.astro";
+
+// Page section components
+import ContactCTA from "../components/ContactCTA.astro";
+import Skills from "../components/Skills.astro";
+
+// Content Fetching: List four most recent work projects
+const projects = (await getCollection("work"))
+  .filter((piece) => {
+    console.log(typeof piece.data.featured); // Add this line
+    return piece.data.featured == true;
+  })
+  .sort((a, b) => a.data.index - b.data.index)
+  .slice(0, 3);
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<BaseLayout>
+  <div class="stack gap-20 lg:gap-48">
+    <div class="wrapper stack gap-8 lg:gap-20">
+      <header class="hero">
+        <Hero
+          title="My name is Tom Gora."
+          greeting="Hi! "
+          tagline="I am a UK based Web Things Creator, diving deep into tech to deliver great experiences."
+          align="start">
+          <h3 style="font-size:var(--text-md); margin-top:2rem;">
+            Some technologies I love:
+          </h3>
+          <div class="tech-stack">
+            <Pill><Icon name="mdi:language-html5" size="1.33rem" />HTML</Pill>
+            <Pill><Icon name="mdi:language-css3" size="1.33rem" />CSS</Pill>
+            <Pill><Icon name="mdi:tailwind" size="1.33rem" />Tailwind</Pill>
+            <Pill
+              ><Icon
+                name="mdi:language-javascript"
+                size="1.33rem"
+              />Javascript</Pill
+            >
+            <Pill><Icon name="mdi:react" size="1.33rem" />React</Pill>
+            <Pill><Icon name="devicon-plain:astro" size="1.33rem" />Astro</Pill>
+            <Pill><Icon name="mdi:language-php" size="1.33rem" />PHP</Pill>
+            <Pill><Icon name="grommet-icons:mysql" size="1.33rem" />MySQL</Pill>
+            <Pill
+              ><Icon name="devicon-plain:apache" size="1.33rem" />Apache</Pill
+            >
+            <Pill><Icon name="mdi:linux" size="1.33rem" />Linux</Pill>
+          </div>
+          <h3 style="font-size:var(--text-md);">
+            Some technologies I used and adapted to:
+          </h3>
+          <div class="tech-stack">
+            <Pill><Icon name="mdi:language-java" size="1.33rem" />Java</Pill>
+            <Pill
+              ><Icon name="mdi:language-csharp" size="1.33rem" />C Sharp</Pill
+            >
+            <Pill
+              ><Icon name="devicon-plain:sqlite" size="1.33rem" />SQLite</Pill
+            >
+            <Pill><Icon name="mdi:jquery" size="1.33rem" />jQuery</Pill>
+            <Pill><Icon name="simple-icons:spring" size="1.33rem" />Spring</Pill
+            >
+          </div>
+          <h3 style="font-size:var(--text-md);">The software I work with:</h3>
+          <div class="tech-stack">
+            <Pill><Icon name="mdi:fedora" size="1.33rem" />Fedora</Pill>
+            <Pill
+              ><Icon
+                name="simple-icons:neovim"
+                size="1.33rem"
+              />Vim/Neovim</Pill
+            >
+            <Pill><Icon name="mdi:ssh" size="1.33rem" />SSH</Pill>
+            <Pill><Icon name="mdi:git" size="1.33rem" />Git/Github</Pill>
+            <Pill
+              ><Icon name="devicon-plain:vscode" size="1.33rem" />VS Code</Pill
+            >
+            <Pill
+              ><Icon name="simple-icons:jetbrains" size="1.33rem" />JetBrains
+              IDEs</Pill
+            >
+          </div>
+        </Hero>
+        <HeroImage visibility="block" />
+      </header>
+
+      <Skills />
+    </div>
+
+    <main class="wrapper stack gap-20 lg:gap-48">
+      <section class="section with-background with-cta">
+        <header class="section-header stack gap-2 lg:gap-4">
+          <h3>Selected Projects</h3>
+          <p>Take a look below at some of my featured work:</p>
+        </header>
+
+        <div class="gallery">
+          <Grid variant="offset">
+            {
+              projects.map((project) => (
+                <li>
+                  <PortfolioPreview project={project} />
+                </li>
+              ))
+            }
+          </Grid>
+        </div>
+
+        <div class="cta">
+          <CallToAction href="/work/"> View All </CallToAction>
+        </div>
+      </section>
+
+      <ContactCTA />
+    </main>
+  </div>
+
+  <style>
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .hero-img-wrapper {
+    }
+
+    .tech-stack {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 90vw;
+      flex-wrap: wrap;
+      scale: 0.8;
+    }
+
+    @media (min-width: 50em) {
+      .hero {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        padding-inline: 2.5rem;
+        gap: 2rem;
+      }
+
+      .tech-stack {
+        justify-content: flex-start;
+        width: auto;
+        flex-wrap: wrap;
+        scale: 1;
+      }
+    }
+
+    /* ====================================================== */
+
+    .section {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .with-background {
+      position: relative;
+    }
+
+    .with-background::before {
+      --hero-bg: var(--bg-image-subtle-2);
+
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      left: 50%;
+      width: 100vw;
+      aspect-ratio: calc(2.25 / var(--bg-scale));
+      top: 0;
+      transform: translateY(-75%) translateX(-50%);
+      background:
+        url("/assets/backgrounds/noise.png") top center/220px repeat,
+        var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
+        var(--gray-999);
+      background-blend-mode: overlay, normal, normal, normal;
+      mix-blend-mode: var(--bg-blend-mode);
+      z-index: -1;
+    }
+
+    .with-background.bg-variant::before {
+      --hero-bg: var(--bg-image-subtle-1);
+    }
+
+    .section-header {
+      justify-self: center;
+      text-align: center;
+      max-width: 50ch;
+      font-size: var(--text-md);
+      color: var(--gray-300);
+    }
+
+    .section-header h3 {
+      font-size: var(--text-2xl);
+    }
+
+    @media (min-width: 50em) {
+      .section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "header header header header" "gallery gallery gallery gallery";
+        gap: 5rem;
+      }
+
+      .section.with-cta {
+        grid-template-areas: "header header header cta" "gallery gallery gallery gallery";
+      }
+
+      .section-header {
+        grid-area: header;
+        font-size: var(--text-lg);
+      }
+
+      .section-header h3 {
+        font-size: var(--text-4xl);
+      }
+
+      .with-cta .section-header {
+        justify-self: flex-start;
+        text-align: left;
+      }
+
+      .gallery {
+        grid-area: gallery;
+      }
+
+      .cta {
+        grid-area: cta;
+      }
+
+      .hero img {
+        margin-left: 4rem;
+        height: 400px;
+        object-position: center;
+        object-fit: auto;
+      }
+    }
+
+    /* ====================================================== */
+
+    .mention-card {
+      display: flex;
+      height: 7rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid var(--gray-800);
+      border-radius: 1.5rem;
+      color: var(--gray-300);
+      background: var(--gradient-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (min-width: 50em) {
+      .mention-card {
+        border-radius: 1.5rem;
+        height: 9.5rem;
+      }
+    }
+  </style>
+</BaseLayout>

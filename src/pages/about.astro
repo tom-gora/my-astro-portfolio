@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import CallToAction from '../components/CallToAction.astro';
+import Icon from '../components/Icon.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Tom Gora" description="About Tom Gora Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About Me"
+tagline="Thanks for stopping by. Read below to learn more about myself and my background, or ..."
+			>
+        <CallToAction href="https://tomgora.online/assets/CV_Tom_Gora.pdf">
+          <span style="font-size:var(--text-md)"> Simply Download My CV</span>
+        </CallToAction>
+				<img
+					width="1553"
+					height="873"
+					src="https://images.unsplash.com/photo-1566837945700-30057527ade0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="A coffee mug with a tagline 'Life begins at the end of your comfort zone' in front of a programmer's workstation with screen in a background'"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+            I am a software development graduate, fascinated by web technologies. Throughout my career I have gathered meaningful IT and customer service
+            experience.
+					</p>
+					<p>
+            With natural people-skills, I am confident, well organized and driven towards continuous professional
+            development. I am always looking for a new challenge that will allow me to utilize my skills and knowledge base. I
+            have a strong work ethic and a great passion for learning.
+					</p>
+
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+          <p>
+            I completed Software Engineering with HND qualifications at the Edinburgh College (2023) with an A-graded project.
+          </p>
+          <p>
+            I followed this step by a attaining my bachelor’s degree, having completed my third year of Mobile Development BA
+            course at the University of the West of Scotland.course the University of the West of Scotland.
+          </p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>GIT</li>
+            <li>React</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>C Sharp</li>
+            <li>jQuery</li>
+            <li>MySQL</li>
+            <li>Apache</li>
+            <li>Linux</li>
+            <li>Tailwind</li>
+          </ul>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+    filter: grayscale(0.75);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+  .content :global(p) {
+		margin-bottom: 0.5rem;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

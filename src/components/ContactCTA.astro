@@ -1,0 +1,49 @@
+---
+import CallToAction from './CallToAction.astro';
+import Icon from './Icon.astro';
+---
+
+<aside>
+	<h2>Interested in working together?</h2>
+	<CallToAction href="mailto:goratomasz@outlook.com">
+		Send Me a Message
+		<Icon icon="paper-plane-tilt" size="1.2em" />
+	</CallToAction>
+</aside>
+
+<style>
+	aside {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+		padding: 5rem 1.5rem;
+		background-color: var(--gray-900);
+    border-radius: 1.5rem;
+	}
+
+  :global(.theme-dark) aside {
+    background-color: var(--gray-999_60);
+  }
+
+	h2 {
+		font-size: var(--text-xl);
+		text-align: center;
+		max-width: 15ch;
+	}
+
+	@media (min-width: 50em) {
+		aside {
+			padding: 7.5rem;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+      margin-inline: 8rem;
+		}
+
+		h2 {
+			font-size: var(--text-3xl);
+			text-align: left;
+		}
+	}
+</style>

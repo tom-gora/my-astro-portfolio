@@ -1,0 +1,102 @@
+---
+import { Icon } from 'astro-icon/components';
+const currentYear = new Date().getFullYear();
+
+---
+
+<footer>
+	<div class="group">
+		<p>
+      Developed in Scotland 
+      <Icon name="emojione:flag-scotland" size="1.33em" /><br class="dirty-mobile-break">
+      with Love
+      <Icon name="mdi:heart" size="1.33em" />
+       and <a href="https://astro.build/">Astro</a>
+			<Icon name="mdi:rocket-launch" size="1.33em" />
+		</p>
+		<p>&copy; {currentYear} Tom Gora
+      <Icon name="iconoir:developer" size="1.33em" /></p>
+	</div>
+	<p class="socials">
+		<a href="https://linkedin.com/in/tomasz-gora-6075b71ba"> LinkedIn</a>
+		<a href="#"> GitHub</a>
+		<a href="https://tomgora.online/assets/CV_Tom_Gora.pdf"> Download my CV</a>
+	</p>
+</footer>
+<script>
+const docTitle = document.title;
+const footer = document.querySelector("footer");
+const backgrounds = document.querySelector(".backgrounds");
+
+const fixFooter = (footer) => {
+  footer.style.position = "fixed";
+  footer.style.bottom = "0";
+  backgrounds.style.height = "100dvh";
+}
+
+docTitle === "Page Not Found"? fixFooter(footer) : null;
+</script>
+
+<style>
+	footer {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-top: auto;
+		padding: 3rem 2rem 3rem;
+		text-align: center;
+		color: var(--gray-300);
+		font-size: var(--text-sm);
+	}
+  
+  :global(.theme-dark) footer,
+  :global(.theme-dark) footer a {
+    color: var(--gray-400);
+  }
+
+	footer a {
+		color: var(--gray-200);
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	footer a:hover,
+	footer a:focus {
+		text-decoration-color: currentColor;
+	}
+
+	.group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.socials {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	@media (min-width: 50em) {
+		footer {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 2.5rem 5rem;
+		}
+
+		.group {
+			flex-direction: row;
+			gap: 1rem;
+			flex-wrap: wrap;
+		}
+
+		.socials {
+			justify-content: flex-end;
+		}
+    .dirty-mobile-break {
+      display: none;
+    }
+	}
+</style>

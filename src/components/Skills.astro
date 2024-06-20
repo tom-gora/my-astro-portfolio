@@ -1,0 +1,64 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+  <div class="stack gap-2 lg:gap-4">
+    <Icon icon="uni" color="var(--accent-regular)" size="2.5rem" gradient />
+    <h2>Degree educated</h2>
+    <p>I strive to know CS concepts in depth, not just iterate within bounds of a chosen framework. With a bachelor's degree I bring in foundational background that bootcamps cannot match.</p>
+  </div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Well-Rounded Dev</h2>
+    <p>I am a big believer in knowing the basics. That is why I do not shy away from trying new things, staying adaptable and agile, reading the docs and trying new projects just to get the necessary high level understanding of concepts. Just because the technology and requirements might change the next day.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="target" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Challenge-Minded</h2>
+    <p>I love technology, that is why I will get excited merging 20 year old PHP with modern Tailwind or get my hands dirty to go into my VPS server to fix a typo "in-production". Why? Because it's personal projects and they are there for me to do continuous development and become a better developer in a professional setting bounds.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-900);
+  }
+
+  :global(.theme-dark) .box {
+    background-color: var(--gray-999_60);
+  }
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
