@@ -24,7 +24,7 @@ index: 4
 
 #### Background
 
-The project was a personal idea and somehow challenge driven. The received task was extremely simple (in my personal view, given nearly 2 years of college have passed by then) and involved writing a simple terminal application. 
+The project was a personal idea and somehow challenge driven. The received task was extremely simple (in my personal view, given nearly 2 years of college have passed by then) and involved writing a simple terminal application.
 The requirements? Read and write data from a .txt file, allow adding club members and displaying a mock "monthly receipt". And it has to be Java. I approached this differently, given that at that point I already knew I git extremely passionate about Web and had zero interest in writing yet another collection of
 `System.out.println();` calls. And so I read the docs to learn Spring, MVC model, templating system and working with an ORM to create a basic app that is made in Java and stores data remotely, yet meets the requirements.
 
@@ -33,7 +33,7 @@ The requirements? Read and write data from a .txt file, allow adding club member
 - Expanding Java knowlegde beyong terminal run code.
 - Using a framework to go beyond PHP, HTML, CSS and jQuery.
 - Use modern JS instead of jQuery where bits of client side interactivity are present.
-- Gain a passmark by going an extra mile. 
+- Gain a passmark by going an extra mile.
 
 #### Features
 
@@ -41,6 +41,6 @@ The requirements? Read and write data from a .txt file, allow adding club member
 - Basic responsiveness.
 - CRUD operations. Well, maybe CRD only. Edition is not included as the requirements did not ask for it.
 
-![Recording of the app operation on a large screen](/assets/work/demo-gym/demo-gym-1.apng)  
+![Recording of the app operation on a large screen](/assets/work/demo-gym/demo-gym-1.apng)
 
-![Recording of the app operation on a real hardware mobile screen](/assets/work/demo-gym/demo-gym-2.apng)  
+![Recording of the app operation on a real hardware mobile screen](/assets/work/demo-gym/demo-gym-2.apng)

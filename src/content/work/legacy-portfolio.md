@@ -33,9 +33,9 @@ How I imagined showing off with plain HTML, CSS and JS having barely completed c
 
 #### Features
 
-- Simple color scheme with a dark mode.  
+- Simple color scheme with a dark mode.
 
-![The page look overview in a recording](/assets/work/legacy-portfolio/legacy-portfolio-1.apng)  
+![The page look overview in a recording](/assets/work/legacy-portfolio/legacy-portfolio-1.apng)
 
 - Apart from hardcoded full "website" projects at the top, little "widget" toy projects pull metadata in JSON format as well as raw markup code from `https://raw.githubusercontent.com`. Then app is displayed within an iframe to provide live demo.
 - Introduction to async data fetching.
@@ -43,4 +43,4 @@ How I imagined showing off with plain HTML, CSS and JS having barely completed c
 - Entries displayed as custom vertical accordion component.
 - Lots and lots of nostalgia.
 
-![Some of the featured items presented on the page](/assets/work/legacy-portfolio/legacy-portfolio-2.apng)  
+![Some of the featured items presented on the page](/assets/work/legacy-portfolio/legacy-portfolio-2.apng)
