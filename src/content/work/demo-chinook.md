@@ -12,7 +12,7 @@ tags:
   - SQLite
   - Admin Page
 featured: true
-index: 3
+index: 4
 ---
 
 ## Chinook Album Management System
@@ -40,4 +40,4 @@ The starting point for this project was using the received SQLite .db file to cr
 - Simple responsive UI.
 - Dedicated logic based on whether the Album or Artist exists in the database, has 0, 1 or more entries per Artist etc.
 
-![Recording of the Chinook app operation](/assets/work/demo-chinook/demo-chinook-1.apng)  
+![Recording of the Chinook app operation](/assets/work/demo-chinook/demo-chinook-1.apng)

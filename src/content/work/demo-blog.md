@@ -10,10 +10,10 @@ tags:
   - CMS
   - Blog
 featured: true
-index: 2
+index: 3
 ---
 
-## Simple CMS backed personal blog - Mid Life Dev *Front End Crisis
+## Simple CMS backed personal blog - Mid Life Dev \*Front End Crisis
 
 > An assignment for Professionalism in Creative Technologies class.
 
@@ -35,11 +35,11 @@ Instead I took the chance to practice some React skills and explore the great su
 
 #### Features
 
-- Simple personal branding  
+- Simple personal branding
 
-![Screenshot of the blog](/assets/work/demo-blog/demo-blog-1.png)  
+![Screenshot of the blog](/assets/work/demo-blog/demo-blog-1.png)
 
 - Responsive design.
 - Dark mode, content carousel and pagination from npm packages integrated into the app.
 
-![Mobile view with dark and light modes](/assets/work/demo-blog/demo-blog-2.apng)  
+![Mobile view with dark and light modes](/assets/work/demo-blog/demo-blog-2.apng)

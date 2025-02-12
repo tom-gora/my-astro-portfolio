@@ -12,7 +12,7 @@ tags:
   - MySQL
   - Tailwind CSS
 featured: true
-index: 1
+index: 2
 ---
 
 ## PhoneZone - Online Smartphone Butique
@@ -35,18 +35,19 @@ Since I was bound by the class requirements to use plain old PHP in this project
 
 #### Features
 
-- Custom svg logos and graphics made in Inkscape.  
+- Custom svg logos and graphics made in Inkscape.
 
 ![Store logo designs in dark and light variants](/assets/work/phonezone/phonezone-1.png)
-- Fully responsive design.  
 
-- Dark mode, with persistent state.  
-- Custom style with clear accent colors palette, inspired by neubrutalist "blockiness" but with classier, toned down colors.  
+- Fully responsive design.
 
-![Mobile view with dark and light modes](/assets/work/phonezone/phonezone-2.apng)  
+- Dark mode, with persistent state.
+- Custom style with clear accent colors palette, inspired by neubrutalist "blockiness" but with classier, toned down colors.
+
+![Mobile view with dark and light modes](/assets/work/phonezone/phonezone-2.apng)
 
 - Custom animations, with reduced-motion included.
-- Custom Admin Panel with Admin and Owner roles scoped and validated both on server and client.  
+- Custom Admin Panel with Admin and Owner roles scoped and validated both on server and client.
 
 ![admin-panel](/assets/work/phonezone/phonezone-3.apng)
 
@@ -55,9 +56,8 @@ Since I was bound by the class requirements to use plain old PHP in this project
 ![store-logo](/assets/work/phonezone/phonezone-4.apng)  
 ![store-logo](/assets/work/phonezone/phonezone-5.apng)
 
-- Two options for third-party authorisation: Google and Github.  
+- Two options for third-party authorisation: Google and Github.
 
 ![store-logo](/assets/work/phonezone/phonezone-6.apng)
 
-- Custom components: Navigation as top-bar or sidebar on mobile, Home page Hero Section, Pagination, Breadcrumbs Navigation, Working cart with persistent per-user state stored in the database, an array of dialogs for edits confirmation etc. and more...  
-
+- Custom components: Navigation as top-bar or sidebar on mobile, Home page Hero Section, Pagination, Breadcrumbs Navigation, Working cart with persistent per-user state stored in the database, an array of dialogs for edits confirmation etc. and more...

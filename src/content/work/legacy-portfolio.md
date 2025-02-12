@@ -10,7 +10,7 @@ tags:
   - Showcase
   - Portfolio
 featured: false
-index: 5
+index: 6
 ---
 
 ## The old look of this site
