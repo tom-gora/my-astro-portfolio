@@ -37,9 +37,9 @@ The base rerquirements was a Laravel-based CRUD website. This balooned into this
 
 #### Features
 
-- Dynamic theme
+- Markdown displays automatically formatted
 
-![Store logo designs in dark and light variants](/assets/work/phonezone/phonezone-1.png)
+![Example processed note](/assets/work/notable/notable-01.png)
 
 - Fully responsive design.
 
