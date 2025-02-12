@@ -41,17 +41,21 @@ The base rerquirements was a Laravel-based CRUD website. This balooned into this
 
 ![Example processed note](/assets/work/notable/notable-01.png)
 
-- Fully responsive design.
+- Basic responsive design, dark mode etc.
 
-- Dark mode, with persistent state.
-- Custom style with clear accent colors palette, inspired by neubrutalist "blockiness" but with classier, toned down colors.
+![Light theme](/assets/work/notable/notable-03.png)
 
-![Mobile view with dark and light modes](/assets/work/phonezone/phonezone-2.apng)
+- Dynamic, searchable ui
 
-- Custom animations, with reduced-motion included.
-- Custom Admin Panel with Admin and Owner roles scoped and validated both on server and client.
+![Searchable items list as accoridion with live search](/assets/work/notable/notable-02.png)
 
-![admin-panel](/assets/work/phonezone/phonezone-3.apng)
+- Markdown editor
+
+![Markdown editor](/assets/work/notable/notable-04.png)
+
+- Dockerized deployment instance with PHP-FPM, POSTGRES and Caddy as downstream server.
+
+![Running in docker](/assets/work/notable/notable-05.png)
 
 - Error and messages handling with feedback for the user.
 
