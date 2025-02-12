@@ -56,4 +56,3 @@ The base rerquirements was a Laravel-based CRUD website. This balooned into this
 - Dockerized deployment instance with PHP-FPM, POSTGRES and Caddy as downstream server.
 
 ![Running in docker](/assets/work/notable/notable-05.png)
-test
