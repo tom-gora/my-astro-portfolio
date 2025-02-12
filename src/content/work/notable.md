@@ -57,13 +57,3 @@ The base rerquirements was a Laravel-based CRUD website. This balooned into this
 
 ![Running in docker](/assets/work/notable/notable-05.png)
 
-- Error and messages handling with feedback for the user.
-
-![store-logo](/assets/work/phonezone/phonezone-4.apng)  
-![store-logo](/assets/work/phonezone/phonezone-5.apng)
-
-- Two options for third-party authorisation: Google and Github.
-
-![store-logo](/assets/work/phonezone/phonezone-6.apng)
-
-- Custom components: Navigation as top-bar or sidebar on mobile, Home page Hero Section, Pagination, Breadcrumbs Navigation, Working cart with persistent per-user state stored in the database, an array of dialogs for edits confirmation etc. and more...
