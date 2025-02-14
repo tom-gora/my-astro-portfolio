@@ -26,14 +26,15 @@ index: 1
 
 #### Why?
 
-The base rerquirements was a Laravel-based CRUD website. This balooned into this nice slightly more ambitious project.
+The base rerquirements was a Laravel-based CRUD website. This expanded into this slightly more ambitious project.
 
 #### What principles?
 
-- Exploring a modern Ajax based technology (Livewire) to enhance basic Laravel assignment
-- Implementing an interesting use case for AI generative technology that isn't yet another chatbot
+- Exploring a modern Ajax based technology (Livewire) to enhance basic requirements for a PHP CRUD app
+- Implementing an interesting use case for AI generative technology that isn't yet another chatbot.
 - Learning to deploy a dockerized application (PHP dependency hell made me do it ;)
-- Leverage modern PHP to create an actual MVP of an application rather than static site from 20 years ago
+- Leverage modern PHP to create an actual MVP of an application rather than static site from 20 years ago.
+- Learn to deploy inside of a dockerized setup, with controlled dependencies.
 
 #### Features
 
