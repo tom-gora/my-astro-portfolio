@@ -42,7 +42,7 @@ The base rerquirements was a Laravel-based CRUD website. This expanded into this
 
 ![Example processed note](/assets/work/notable/notable-01.png)
 
-- Basic responsive design, dark mode etc.
+- Basic responsive design, light and dark mode etc.
 
 ![Light theme](/assets/work/notable/notable-03.png)
 
