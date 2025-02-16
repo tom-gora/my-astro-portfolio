@@ -44,6 +44,6 @@ Instead I took the chance to practice some React skills and explore the great su
 - Light/dark mode, content carousel and pagination from npm packages integrated into the app.
 
 UPDATE: *
-- For new server setup strapi CMS setup to run propely in a node docker environment with correct dependencies versions, persistent database (default SQLite) setup and hidden behind a reverse proxy.
+- For new server setup strapi CMS configured to run propely in a node image docker environment, with correct dependencies versions, persistent database (default SQLite) setup and hidden behind a reverse proxy.
 Backend service made ready to potentially serve more content other than just this simple blog demo.
 
