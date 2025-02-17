@@ -54,7 +54,7 @@ const formatDate = (date) => {
 				</div>
 			</header>
 			<main class="wrapper">
-				<div class="stack gap-10 content">
+				<div class="stack content gap-10">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
 					<div class="content">
 						<Content />
@@ -130,6 +130,7 @@ const formatDate = (date) => {
 		border-radius: 1rem;
 		box-shadow: var(--shadow-sm);
 		background: var(--gradient-subtle);
+    border: var(--accent-border-thick);
 	}
 
 	.content :global(blockquote) {
@@ -140,7 +141,18 @@ const formatDate = (date) => {
 		padding-inline-start: 1.5rem;
 		border-inline-start: 0.25rem solid var(--accent-dark);
 		color: var(--gray-0);
-	}
+  }
+
+  .content :global(.animated-demo) {
+    margin-left: 2rem;
+    max-width: 96%;
+    margin-block: 2rem;
+    border-radius: 1.5rem;
+    border: var(--accent-border-thick);
+    box-shadow: var(--shadow-sm);
+  }
+  
+
 
 	.back-link,
 	.content :global(a) {

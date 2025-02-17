@@ -54,6 +54,6 @@ The base rerquirements was a Laravel-based CRUD website. This expanded into this
 
 ![Markdown editor](/assets/work/notable/notable-04.png)
 
-- Dockerized deployment instance with PHP-FPM, POSTGRES and Caddy as downstream server.
+- Dockerized deployment instance with PHP-FPM and POSTGRES images.
 
 ![Running in docker](/assets/work/notable/notable-05.png)

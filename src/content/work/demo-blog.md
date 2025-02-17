@@ -43,7 +43,11 @@ Instead I took the chance to practice some React skills and explore the great su
 - Responsive design.
 - Light/dark mode, content carousel and pagination from npm packages integrated into the app.
 
-UPDATE: *
-- For new server setup strapi CMS configured to run propely in a node image docker environment, with correct dependencies versions, persistent database (default SQLite) setup and hidden behind a reverse proxy.
-Backend service made ready to potentially serve more content other than just this simple blog demo.
+<video class="animated-demo"  autoplay loop muted playsinline poster="/assets/work/demo-blog/demo-blog-2-preview.png">
+    <source src="/assets/work/demo-blog/demo-blog-2.mp4" type="video/mp4">
+</video>
 
+UPDATE: \*
+
+- For new server setup strapi CMS configured to run propely in a node image docker environment, with correct dependencies versions, persistent database (default SQLite) setup and hidden behind a reverse proxy.
+  Backend service made ready to potentially serve more content other than just this simple blog demo.
