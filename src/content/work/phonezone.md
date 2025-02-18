@@ -44,20 +44,35 @@ Since I was bound by the class requirements to use plain old PHP in this project
 - Dark mode, with persistent state.
 - Custom style with clear accent colors palette, inspired by neubrutalist "blockiness" but with classier, toned down colors.
 
-![Mobile view with dark and light modes](/assets/work/phonezone/phonezone-2.apng)
+<video class="animated-demo"  autoplay loop muted playsinline poster="/assets/work/phonezone/phonezone-2-preview.png">
+    <source src="/assets/work/phonezone/phonezone-2.mp4" type="video/mp4">
+</video>
 
 - Custom animations, with reduced-motion included.
 - Custom Admin Panel with Admin and Owner roles scoped and validated both on server and client.
 
-![admin-panel](/assets/work/phonezone/phonezone-3.apng)
+<video class="animated-demo"  autoplay loop muted playsinline poster="/assets/work/phonezone/phonezone-3-preview.png">
+    <source src="/assets/work/phonezone/phonezone-3.mp4" type="video/mp4">
+</video>
 
 - Error and messages handling with feedback for the user.
 
-![store-logo](/assets/work/phonezone/phonezone-4.apng)  
-![store-logo](/assets/work/phonezone/phonezone-5.apng)
+<video class="animated-demo"  autoplay loop muted playsinline poster="/assets/work/phonezone/phonezone-4-preview.png">
+    <source src="/assets/work/phonezone/phonezone-4.mp4" type="video/mp4">
+</video>
+
+<video class="animated-demo"  autoplay loop muted playsinline poster="/assets/work/phonezone/phonezone-5-preview.png">
+    <source src="/assets/work/phonezone/phonezone-5.mp4" type="video/mp4">
+</video>
 
 - Two options for third-party authorisation: Google and Github.
 
-![store-logo](/assets/work/phonezone/phonezone-6.apng)
+<video class="animated-demo"  autoplay loop muted playsinline poster="/assets/work/phonezone/phonezone-6-preview.png">
+    <source src="/assets/work/phonezone/phonezone-6.mp4" type="video/mp4">
+</video>
 
 - Custom components: Navigation as top-bar or sidebar on mobile, Home page Hero Section, Pagination, Breadcrumbs Navigation, Working cart with persistent per-user state stored in the database, an array of dialogs for edits confirmation etc. and more...
+
+UPDATE: \*
+
+- For new server setup deployed neatly and nicely in a containerized form from openjdk alpine image and mariadb:latest
