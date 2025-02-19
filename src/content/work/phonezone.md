@@ -75,4 +75,4 @@ Since I was bound by the class requirements to use plain old PHP in this project
 
 UPDATE: \*
 
-- For new server setup deployed neatly and nicely in a containerized form from openjdk alpine image and mariadb:latest
+- For new server setup deployed neatly with docker containers pulled from php-fpm and mariadb.
