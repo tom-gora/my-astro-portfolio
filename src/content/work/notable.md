@@ -14,7 +14,7 @@ tags:
   - Postgres
   - Docker Compose
 featured: true
-index: 1
+index: 2
 ---
 
 ## Notable - Smartly converts scanned handwritten notes to markdown

@@ -12,7 +12,7 @@ tags:
   - MySQL
   - Tailwind CSS
 featured: true
-index: 2
+index: 3
 ---
 
 ## PhoneZone - Online Smartphone Butique

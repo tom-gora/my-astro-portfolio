@@ -11,7 +11,7 @@ tags:
   - CMS
   - Blog
 featured: true
-index: 3
+index: 4
 ---
 
 ## Simple CMS backed personal blog - Mid Life Dev \*Front End Crisis

@@ -45,7 +45,6 @@ UPDATE: \*
 
 - For new server setup deployed neatly and nicely in a containerized form from openjdk alpine image and mariadb:latest
 
-
 <video class="animated-demo"  autoplay loop muted playsinline poster="/assets/work/demo-gym/demo-gym-main.png">
     <source src="/assets/work/demo-gym/demo-gym-1.mp4" type="video/mp4">
 </video>
