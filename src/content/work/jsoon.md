@@ -9,10 +9,11 @@ tags:
   - Service  
   - CLI tool  
   - Unix Philosophy  
-  - Calendar and Events  
+  - Calendar Events  
   - Notifications  
-  - Astro + Svelte  
-  - Smart Work With AI  
+  - Astro  
+  - Svelte  
+  - Work With AI  
 featured: true  
 index: 1  
 ---  
