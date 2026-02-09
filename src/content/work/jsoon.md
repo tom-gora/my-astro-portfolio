@@ -9,7 +9,7 @@ tags:
   - Service  
   - CLI tool  
   - Unix Philosophy  
-  - Calendar and Events  
+  - Calendar Events  
   - Notifications  
   - Astro  
   - Svelte  
