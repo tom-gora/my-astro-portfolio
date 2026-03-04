@@ -5,7 +5,7 @@ img: /assets/work/jsoon/jsoon-main.png
 img_alt: Screenshot of Web Demo for JSOON binary
 description: The big return
 tags:
-  - Golang
+  - Go
   - Backend
   - CLI tool
   - Unix Philosophy
