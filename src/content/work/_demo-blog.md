@@ -27,7 +27,7 @@ ______________________________________________________________________
 #### Background
 
 The class mixed people from different digital creative courses, thus the task was focused on content and allowed publishing texts on the assigned topics on any platform. As a web developer I mostly supplied content that is quite "filler-like" in character consciously.\
-Instead I took the chance to practice some React skills and explore the great substitute for WordPress - open source CMS project called Strapi. With the CMS endpoints exposed on my server, I fetch the posts and render them as a React app.
+Instead I took the chance to learn some React skills and explore the great substitute for WordPress - open source CMS project called Strapi. With the CMS endpoints exposed on my server, I fetch the posts and render them as a React app.
 
 #### What goals?
 
